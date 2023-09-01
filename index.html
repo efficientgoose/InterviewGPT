@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<title>InterviewGPT</title>
+		<link rel="stylesheet" href="second.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./index.css">
+
+	</head>
+
+	<body>
+		<div class="back">
+		</div>
+		<main>
+			<section class="chatbot-container">
+				<div class="chatbot-header">
+					<img src="images/owl-logo.png" class="logo">
+					<h1 class="title">InterviewGPT</h1>
+					<h2 class="subtitle">Let's Learn Programming!</h2>
+					<p class="supportId" id="topic">User ID: 1344</p>
+					<button class="clear-btn" id="clear-btn">New Subject</button>
+				</div>
+				<div class="chatbot-conversation-container" id="chatbot-conversation">
+					<div class="speech speech-ai">
+						👋Hi I'm <strong>InterviewGPT!</strong> I'm here to help you with your interview preparation.
+					</div>
+
+					<div class="speech speech-ai">
+						What do you want to learn today? <strong>Please select a subject to get started.</strong>
+					</div>
+
+					<div class="speech small-chat">
+						1. Operating System
+					</div>
+
+					<div class="speech small-chat">
+						2. DBMS
+					</div>
+
+					<div class="speech small-chat">
+						3. Computer Networks
+					</div>
+
+					<div class="speech small-chat">
+						4. OOPs
+					</div>
+				</div>
+				<form id="form" class="chatbot-input-container">
+					<input name="user-input" type="text" id="user-input" required>
+					<button id="submit-btn" class="submit-btn">
+						<img 
+							src="images/send-btn-icon.png" 
+							class="send-btn-icon"
+						>
+					</button>
+				</form>
+
+				<h2 id="warning">⚠️The responses from chatbot may take a while.</h2>
+			</section>
+			<div>
+			</div>
+			
+		</main>
+		
+		<script type="module" src="index.js"></script>
+	</body>
+
+</html>
